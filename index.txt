@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Local Humanitarian Leadership (LHL) — Transforming the Humanitarian System</title>
+  <!-- Tailwind CSS CDN -->
+  <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body class="bg-slate-50 text-slate-800 font-sans antialiased flex flex-col min-h-screen">
+
+  <!-- HEADER & NAVIGATION -->
+  <header class="sticky top-0 z-50 bg-white/95 backdrop-blur border-b border-slate-200">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 h-20 flex items-center justify-between">
+      <!-- Logo -->
+      <a href="index.html" class="flex items-center gap-3">
+        <div class="bg-blue-900 text-white font-bold px-3 py-2 rounded-lg tracking-wider text-sm">LHL</div>
+        <div class="flex flex-col">
+          <span class="font-bold text-slate-900 text-sm sm:text-base leading-tight">Local Humanitarian Leadership</span>
+          <span class="text-xs text-slate-500">Global Network & Community</span>
+        </div>
+      </a>
+
+      <!-- Desktop Nav -->
+      <nav class="hidden md:flex items-center gap-8 text-sm font-medium text-slate-600">
+        <a href="about.html" class="hover:text-blue-600 transition">About Us</a>
+        <a href="news.html" class="hover:text-blue-600 transition">News</a>
+        <a href="repositori.html" class="hover:text-blue-600 transition">Knowledge Hub</a>
+        <a href="flhl.html" class="hover:text-blue-600 transition">FLHL</a>
+        <a href="event.html" class="hover:text-blue-600 transition">Event</a>
+      </nav>
+
+      <!-- Action Buttons: Sign In & Sign Up (Desktop) -->
+      <div class="hidden sm:flex items-center gap-2">
+        <a href="signin.html" class="text-slate-700 hover:text-blue-600 px-3 py-1.5 rounded-lg text-xs font-semibold transition border border-slate-200 hover:border-slate-300">
+          Sign In
+        </a>
+        <a href="signup.html" class="bg-blue-600 hover:bg-blue-700 text-white px-3.5 py-1.5 rounded-lg text-xs font-semibold transition shadow-sm">
+          Sign Up
+        </a>
+      </div>
+
+      <!-- Mobile Menu Button (Hamburger) -->
+      <button id="mobile-menu-button" class="md:hidden p-2 rounded-lg text-slate-700 hover:text-blue-600 hover:bg-slate-100 transition focus:outline-none" aria-label="Toggle Menu">
+        <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+          <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"></path>
+        </svg>
+      </button>
+    </div>
+
+    <!-- Mobile Menu Dropdown -->
+    <div id="mobile-menu" class="hidden md:hidden bg-white border-b border-slate-200 px-4 pt-2 pb-6 space-y-3 shadow-lg">
+      <nav class="flex flex-col space-y-2 text-sm font-medium text-slate-600">
+        <a href="about.html" class="hover:text-blue-600 hover:bg-slate-50 px-3 py-2 rounded-lg transition">About Us</a>
+        <a href="news.html" class="hover:text-blue-600 hover:bg-slate-50 px-3 py-2 rounded-lg transition">News</a>
+        <a href="repositori.html" class="hover:text-blue-600 hover:bg-slate-50 px-3 py-2 rounded-lg transition">Knowledge Hub</a>
+        <a href="flhl.html" class="hover:text-blue-600 hover:bg-slate-50 px-3 py-2 rounded-lg transition">FLHL</a>
+        <a href="event.html" class="hover:text-blue-600 hover:bg-slate-50 px-3 py-2 rounded-lg transition">Event</a>
+      </nav>
+      <div class="pt-2 border-t border-slate-100 flex items-center gap-2">
+        <a href="signin.html" class="w-full text-center text-slate-700 hover:text-blue-600 px-3 py-2 rounded-lg text-xs font-semibold transition border border-slate-200">
+          Sign In
+        </a>
+        <a href="signup.html" class="w-full text-center bg-blue-600 hover:bg-blue-700 text-white px-3.5 py-2 rounded-lg text-xs font-semibold transition shadow-sm">
+          Sign Up
+        </a>
+      </div>
+    </div>
+  </header>
+
+  <!-- HERO SECTION (Compacted Margin & Reduced Height) -->
+  <section class="relative bg-slate-900 text-white pt-10 pb-8 lg:pt-12 lg:pb-10 overflow-hidden">
+    <div class="absolute inset-0 opacity-30 bg-cover bg-center" style="background-image: url('https://images.unsplash.com/photo-1593113598332-cd288d649433?auto=format&fit=crop&w=1600&q=80')"></div>
+    <div class="absolute inset-0 bg-gradient-to-r from-slate-950 via-slate-900/90 to-transparent"></div>
+
+    <div class="relative max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="max-w-3xl mb-8">
+        <h1 class="text-2xl sm:text-3xl lg:text-4xl font-extrabold tracking-tight leading-snug mb-2">
+          Transforming the Humanitarian System Through <span class="text-blue-400">Local Leadership</span>
+        </h1>
+
+        <p class="text-sm sm:text-base text-slate-300 leading-relaxed mb-0">
+          Humanitarian action should be led by local actors whenever possible. We champion locally-led preparedness, equitable funding, and systemic change from the ground up.
+        </p>
+      </div>
+
+      <!-- Integrated Stats Bar Inside Hero -->
+      <div class="grid grid-cols-2 md:grid-cols-4 gap-6 pt-6 border-t border-slate-800/80 text-center md:text-left">
+        <div>
+          <span class="text-xs uppercase tracking-wider text-slate-400 font-semibold block mb-0.5">Global Network</span>
+          <span class="text-xl sm:text-2xl font-extrabold text-blue-400">25 Countries</span>
+          <span class="text-xs text-slate-400 block mt-0.5">Active country presence</span>
+        </div>
+        <div>
+          <span class="text-xs uppercase tracking-wider text-slate-400 font-semibold block mb-0.5">Network Members</span>
+          <span class="text-xl sm:text-2xl font-extrabold text-white">120+</span>
+          <span class="text-xs text-slate-400 block mt-0.5">Local & national organizations</span>
+        </div>
+        <div>
+          <span class="text-xs uppercase tracking-wider text-slate-400 font-semibold block mb-0.5">Knowledge Base</span>
+          <span class="text-xl sm:text-2xl font-extrabold text-blue-400">80+</span>
+          <span class="text-xs text-slate-400 block mt-0.5">Policy briefs & case studies</span>
+        </div>
+        <div>
+          <span class="text-xs uppercase tracking-wider text-slate-400 font-semibold block mb-0.5">Global Summit</span>
+          <span class="text-xl sm:text-2xl font-extrabold text-white">Triennial</span>
+          <span class="text-xs text-slate-400 block mt-0.5">Global leadership convention</span>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- CORE PILLARS SECTION -->
+  <section class="py-16 bg-slate-50 flex-grow">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="text-center max-w-2xl mx-auto mb-12">
+        <span class="text-blue-600 text-xs font-bold uppercase tracking-widest block mb-2">What We Stand For</span>
+        <h2 class="text-3xl font-bold text-slate-900 tracking-tight">Core Pillars of Local Humanitarian Leadership</h2>
+        <p class="text-slate-600 mt-3 text-sm">Addressing inequities in the global humanitarian system by centering local responders and community wisdom.</p>
+      </div>
+
+      <div class="grid md:grid-cols-3 gap-8">
+        <!-- Pillar 1 -->
+        <div class="bg-white p-8 rounded-2xl border border-slate-200 shadow-sm hover:shadow-md transition">
+          <div class="w-12 h-12 bg-blue-50 text-blue-600 rounded-xl flex items-center justify-center font-bold text-lg mb-6">01</div>
+          <h3 class="text-lg font-bold text-slate-900 mb-3">Locally-Led Preparedness</h3>
+          <p class="text-sm text-slate-600 leading-relaxed">
+            Empowering local communities and front-line organizations who arrive first and stay last during disaster strikes, utilizing local languages and geographical knowledge.
+          </p>
+        </div>
+
+        <!-- Pillar 2 -->
+        <div class="bg-white p-8 rounded-2xl border border-slate-200 shadow-sm hover:shadow-md transition">
+          <div class="w-12 h-12 bg-blue-50 text-blue-600 rounded-xl flex items-center justify-center font-bold text-lg mb-6">02</div>
+          <h3 class="text-lg font-bold text-slate-900 mb-3">Equitable Power & Funding</h3>
+          <p class="text-sm text-slate-600 leading-relaxed">
+            Challenging institutional inequities where international agencies receive the majority of funding, redirecting decision-making power directly to local actors.
+          </p>
+        </div>
+
+        <!-- Pillar 3 -->
+        <div class="bg-white p-8 rounded-2xl border border-slate-200 shadow-sm hover:shadow-md transition">
+          <div class="w-12 h-12 bg-blue-50 text-blue-600 rounded-xl flex items-center justify-center font-bold text-lg mb-6">03</div>
+          <h3 class="text-lg font-bold text-slate-900 mb-3">Inclusive Storytelling & Equity</h3>
+          <p class="text-sm text-slate-600 leading-relaxed">
+            Highlighting women leaders, grassroots changemakers, and localized responses to shift global narratives toward sustainable humanitarian practices.
+          </p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- FOOTER -->
+  <footer class="bg-slate-900 text-slate-400 py-12 border-t border-slate-800">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 flex flex-col md:flex-row items-center justify-between gap-6 text-center md:text-left">
+      <div>
+        <span class="text-white font-bold tracking-wider text-base block mb-1">LOCAL HUMANITARIAN LEADERSHIP NETWORK</span>
+        <p class="text-xs text-slate-500">Transforming the humanitarian system through locally-led action.</p>
+      </div>
+      <p class="text-xs text-slate-500">© 2026 Local Humanitarian Leadership. All rights reserved.</p>
+    </div>
+  </footer>
+
+  <!-- SCRIPT MOBILE MENU -->
+  <script>
+    document.addEventListener('DOMContentLoaded', () => {
+      const mobileMenuButton = document.getElementById('mobile-menu-button');
+      const mobileMenu = document.getElementById('mobile-menu');
+
+      mobileMenuButton.addEventListener('click', () => {
+        mobileMenu.classList.toggle('hidden');
+      });
+    });
+  </script>
+
+</body>
+</html>
