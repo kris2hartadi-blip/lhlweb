@@ -1,0 +1,231 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>About Us — Local Humanitarian Leadership (LHL)</title>
+  <!-- Tailwind CSS CDN -->
+  <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body class="bg-slate-50 text-slate-800 font-sans antialiased flex flex-col min-h-screen">
+
+  <!-- HEADER & NAVIGATION -->
+  <header class="sticky top-0 z-50 bg-white/95 backdrop-blur border-b border-slate-200">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 h-20 flex items-center justify-between">
+      <!-- Logo -->
+      <a href="index.html" class="flex items-center gap-3">
+        <div class="bg-blue-900 text-white font-bold px-3 py-2 rounded-lg tracking-wider text-sm">LHL</div>
+        <div class="flex flex-col">
+          <span class="font-bold text-slate-900 text-sm sm:text-base leading-tight">Local Humanitarian Leadership</span>
+          <span class="text-xs text-slate-500">Global Network & Community</span>
+        </div>
+      </a>
+
+      <!-- Desktop Nav (Active State on About Us) -->
+      <nav class="hidden md:flex items-center gap-8 text-sm font-medium text-slate-600">
+        <a href="about.html" class="text-blue-600 font-bold text-base underline underline-offset-8 decoration-2">About Us</a>
+        <a href="news.html" class="hover:text-blue-600 transition">News</a>
+        <a href="repositori.html" class="hover:text-blue-600 transition">Knowledge Hub</a>
+        <a href="flhl.html" class="hover:text-blue-600 transition">FLHL</a>
+        <a href="event.html" class="hover:text-blue-600 transition">Upcoming Event</a>
+      </nav>
+
+      <!-- Action Buttons: Sign In & Sign Up (Desktop) -->
+      <div class="hidden sm:flex items-center gap-2">
+        <a href="signin.html" class="text-slate-700 hover:text-blue-600 px-3 py-1.5 rounded-lg text-xs font-semibold transition border border-slate-200 hover:border-slate-300">
+          Sign In
+        </a>
+        <a href="signup.html" class="bg-blue-600 hover:bg-blue-700 text-white px-3.5 py-1.5 rounded-lg text-xs font-semibold transition shadow-sm">
+          Sign Up
+        </a>
+      </div>
+
+      <!-- Mobile Menu Button (Hamburger) -->
+      <button id="mobile-menu-button" class="md:hidden p-2 rounded-lg text-slate-700 hover:text-blue-600 hover:bg-slate-100 transition focus:outline-none" aria-label="Toggle Menu">
+        <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+          <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"></path>
+        </svg>
+      </button>
+    </div>
+
+    <!-- Mobile Menu Dropdown -->
+    <div id="mobile-menu" class="hidden md:hidden bg-white border-b border-slate-200 px-4 pt-2 pb-6 space-y-3 shadow-lg">
+      <nav class="flex flex-col space-y-2 text-sm font-medium text-slate-600">
+        <a href="about.html" class="text-blue-600 font-bold bg-blue-50 px-3 py-2 rounded-lg">About Us</a>
+        <a href="news.html" class="hover:text-blue-600 hover:bg-slate-50 px-3 py-2 rounded-lg transition">News</a>
+        <a href="repositori.html" class="hover:text-blue-600 hover:bg-slate-50 px-3 py-2 rounded-lg transition">Knowledge Hub</a>
+        <a href="flhl.html" class="hover:text-blue-600 hover:bg-slate-50 px-3 py-2 rounded-lg transition">FLHL</a>
+        <a href="event.html" class="hover:text-blue-600 hover:bg-slate-50 px-3 py-2 rounded-lg transition">Upcoming Event</a>
+      </nav>
+      <div class="pt-2 border-t border-slate-100 flex items-center gap-2">
+        <a href="signin.html" class="w-full text-center text-slate-700 hover:text-blue-600 px-3 py-2 rounded-lg text-xs font-semibold transition border border-slate-200">
+          Sign In
+        </a>
+        <a href="signup.html" class="w-full text-center bg-blue-600 hover:bg-blue-700 text-white px-3.5 py-2 rounded-lg text-xs font-semibold transition shadow-sm">
+          Sign Up
+        </a>
+      </div>
+    </div>
+  </header>
+
+  <!-- HERO SECTION -->
+  <section class="relative bg-slate-900 text-white pt-8 pb-12 lg:pt-12 lg:pb-16 overflow-hidden">
+    <div class="absolute inset-0 opacity-30 bg-cover bg-center" style="background-image: url('https://images.unsplash.com/photo-1593113598332-cd288d649433?auto=format&fit=crop&w=1600&q=80')"></div>
+    <div class="absolute inset-0 bg-gradient-to-r from-slate-950 via-slate-900/90 to-transparent"></div>
+
+    <div class="relative max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="max-w-3xl">
+        <h1 class="text-3xl sm:text-4xl lg:text-5xl font-extrabold tracking-tight leading-tight mb-4">
+          About <span class="text-blue-400">Local Humanitarian Leadership</span>
+        </h1>
+        <p class="text-base text-slate-300 leading-relaxed">
+          Discover our vision, mission, and commitment to shifting power and resources directly to local actors across the globe[cite: 1].
+        </p>
+      </div>
+    </div>
+  </section>
+
+  <!-- SCROLLSPY CAPSULE SUB-MENU NAVIGATION -->
+  <div class="sticky top-20 z-40 bg-white/90 backdrop-blur border-b border-slate-200 shadow-sm">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-3">
+      <div class="flex items-center gap-2 overflow-x-auto no-scrollbar scroll-smooth">
+        <a href="#who-we-are" data-target="who-we-are" class="nav-capsule whitespace-nowrap px-4 py-2 rounded-full text-xs font-semibold transition bg-slate-100 text-slate-600 hover:bg-blue-50 hover:text-blue-600">
+          Who We Are
+        </a>
+        <a href="#our-purpose" data-target="our-purpose" class="nav-capsule whitespace-nowrap px-4 py-2 rounded-full text-xs font-semibold transition bg-slate-100 text-slate-600 hover:bg-blue-50 hover:text-blue-600">
+          Our Purpose
+        </a>
+        <a href="#how-we-work" data-target="how-we-work" class="nav-capsule whitespace-nowrap px-4 py-2 rounded-full text-xs font-semibold transition bg-slate-100 text-slate-600 hover:bg-blue-50 hover:text-blue-600">
+          How We Work
+        </a>
+        <a href="#where-we-work" data-target="where-we-work" class="nav-capsule whitespace-nowrap px-4 py-2 rounded-full text-xs font-semibold transition bg-slate-100 text-slate-600 hover:bg-blue-50 hover:text-blue-600">
+          Where We Work
+        </a>
+      </div>
+    </div>
+  </div>
+
+  <!-- MAIN CONTENT AREA -->
+  <main class="flex-grow py-12">
+    <div class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 space-y-16">
+
+      <!-- SECTION: WHO WE ARE -->
+      <section id="who-we-are" class="scroll-mt-36 bg-white p-8 sm:p-10 rounded-2xl border border-slate-200 shadow-sm">
+        <h2 class="text-2xl font-bold text-slate-900 mb-6 pb-3 border-b border-slate-100 flex items-center gap-3">
+          <span class="w-2.5 h-6 bg-blue-600 rounded-full"></span>
+          Who We Are & What We Do
+        </h2>
+        <div class="space-y-4 text-slate-600 leading-relaxed text-sm sm:text-base">
+          <p>Welcome to the LHL site. This is a safe space for discussion and collaboration, real time exchanges, and gathering of experiences about local humanitarian leadership (LHL)[cite: 1].</p>
+          <p>The website is run by a Community of Practice of local and national actors with support from allies in the international NGOs whose aim is to ensure that LHL approaches are considered & embedded in any humanitarian preparedness, response and changing approaches[cite: 1].</p>
+          <p>The group represents different thematical expertise from diverse geographical contexts all over the world[cite: 1]. The LHL aims to realize a transformation in the humanitarian sector that is locally led in line with the localization commitments of the 2016 World Humanitarian Summit which also led to two landmark documents, the Grand Bargain and the Charter for Change (C4C)[cite: 1].</p>
+          
+          <h3 class="text-lg font-bold text-slate-900 pt-4 mb-2">What We Do</h3>
+          <p>The group aims to ensure that local humanitarian leadership (LHL) approaches are considered & embedded in any humanitarian preparedness, response, recovery and changing approaches[cite: 1]. The scope can be country, regional and/or global depending on emerging needs[cite: 1]. Core of the practice group is programmatic; however, it should inform/support the Influencing work where/when required[cite: 1]. Since most of the local organizations in the LHL network work beyond response, we also aim to work in the triple Nexus goals of development, peacebuilding, and response[cite: 1].</p>
+          <p>Among the gaps seen by the group is low representation of Women’s Rights Organization (WRO) in its ranks[cite: 1]. Effective humanitarian response requires promoting and strengthening women’s leadership in local humanitarian action[cite: 1]. Supporting women and women’s organizations to play key leadership roles in the humanitarian sector and in community DRR, relief, and recovery efforts—helping them highlight the confidence and voice that is so often muted—is an overarching objective of the practice group too[cite: 1]. This will help reduce gender inequality, increase inclusion/diversity, and improve the effectiveness of humanitarian action[cite: 1]. Hence, we continue to look for WROs to join the practice group[cite: 1].</p>
+        </div>
+      </section>
+
+      <!-- SECTION: OUR PURPOSE -->
+      <section id="our-purpose" class="scroll-mt-36 bg-white p-8 sm:p-10 rounded-2xl border border-slate-200 shadow-sm">
+        <h2 class="text-2xl font-bold text-slate-900 mb-6 pb-3 border-b border-slate-100 flex items-center gap-3">
+          <span class="w-2.5 h-6 bg-blue-600 rounded-full"></span>
+          Our Purpose
+        </h2>
+        <ul class="space-y-3 text-slate-600 leading-relaxed text-sm sm:text-base list-disc pl-5">
+          <li>Listen & identify specific LHL entry points/approaches/ real time learning questions in relation to humanitarian issues at various levels: country, regional, global[cite: 1].</li>
+          <li>Support progress on LHL commitments including those in the Charter for Change and the Grand Bargain[cite: 1].</li>
+          <li>Enable the mainstreaming of LHL principles and approaches in humanitarian preparedness, response initiatives & ways of working; strive for quality & relevance of humanitarian approach through the LHL lens[cite: 1].</li>
+          <li>Gather & exchange emerging knowledge and learning that is relevant to the LHL agenda in a changing humanitarian context/model[cite: 1].</li>
+          <li>Scope future scenarios & possibilities on how issues impact the humanitarian sector, particularly the localization/LHL agenda and potentially be an innovative force of proposition for new ideas/approaches etc[cite: 1].</li>
+        </ul>
+      </section>
+
+      <!-- SECTION: HOW WE WORK -->
+      <section id="how-we-work" class="scroll-mt-36 bg-white p-8 sm:p-10 rounded-2xl border border-slate-200 shadow-sm">
+        <h2 class="text-2xl font-bold text-slate-900 mb-6 pb-3 border-b border-slate-100 flex items-center gap-3">
+          <span class="w-2.5 h-6 bg-blue-600 rounded-full"></span>
+          How We Work
+        </h2>
+        <div class="space-y-4 text-slate-600 leading-relaxed text-sm sm:text-base">
+          <p>As a community of practice, the practice group is being run by a core group of Oxfam staff and local and national NGOs and local humanitarian agencies on a voluntary and rotational basis[cite: 1]. Since the group is still new, the group continue to have a core group that stays informal in nature, but pays attention to the issues raised by the group during the monthly meetings and during email discussions[cite: 1]. The larger practice group takes a ‘whole of society approach’, where all the members are responsible for keeping the group running and making the engagements relevant[cite: 1].</p>
+          <p>INGOs and UN bodies are welcome in the space as LNNGOs see their value[cite: 1]. However, international colleagues and allies are enjoined to respect the space and ensure[cite: 1]:</p>
+          <ul class="space-y-2 list-disc pl-5 font-medium text-slate-700">
+            <li>Local actors should be in the driving seat[cite: 1]</li>
+            <li>Local actors should be at decision-making table – better placed to explain what works and what doesn’t work[cite: 1]</li>
+          </ul>
+        </div>
+      </section>
+
+      <!-- SECTION: WHERE WE WORK -->
+      <section id="where-we-work" class="scroll-mt-36 bg-white p-8 sm:p-10 rounded-2xl border border-slate-200 shadow-sm">
+        <h2 class="text-2xl font-bold text-slate-900 mb-6 pb-3 border-b border-slate-100 flex items-center gap-3">
+          <span class="w-2.5 h-6 bg-blue-600 rounded-full"></span>
+          Where We Work
+        </h2>
+        <div class="space-y-4 text-slate-600 leading-relaxed text-sm sm:text-base">
+          <p>The Local Humanitarian Leadership Network (LHL Network), is a global community of practice spread in 25 countries and comprised by 120 members from local and national organizations, Oxfam country offices, staff and other allies and supporters of localization and local humanitarian leadership[cite: 1].</p>
+          <div class="bg-blue-50/60 border border-blue-100 p-6 rounded-xl text-blue-900 mt-6">
+            <p class="font-medium">We encourage you to please invite or link this group to other local actors in your country who may benefit from the work of their peers[cite: 1]. Should you have questions or interest to participate, please contact us[cite: 1].</p>
+          </div>
+        </div>
+      </section>
+
+    </div>
+  </main>
+
+  <!-- FOOTER -->
+  <footer class="bg-slate-900 text-slate-400 py-12 border-t border-slate-800">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 flex flex-col md:flex-row items-center justify-between gap-6 text-center md:text-left">
+      <div>
+        <span class="text-white font-bold tracking-wider text-base block mb-1">LOCAL HUMANITARIAN LEADERSHIP NETWORK</span>
+        <p class="text-xs text-slate-500">Transforming the humanitarian system through locally-led action.</p>
+      </div>
+      <p class="text-xs text-slate-500">© 2026 Local Humanitarian Leadership. All rights reserved.</p>
+    </div>
+  </footer>
+
+  <!-- SCRIPT: MOBILE MENU & SCROLLSPY HIGHLIGHT -->
+  <script>
+    document.addEventListener('DOMContentLoaded', () => {
+      // Mobile Menu Toggle
+      const mobileMenuButton = document.getElementById('mobile-menu-button');
+      const mobileMenu = document.getElementById('mobile-menu');
+
+      mobileMenuButton.addEventListener('click', () => {
+        mobileMenu.classList.toggle('hidden');
+      });
+
+      // ScrollSpy & Capsule Active State Highlight
+      const sections = document.querySelectorAll('section[id]');
+      const capsules = document.querySelectorAll('.nav-capsule');
+
+      function changeActiveCapsule() {
+        let scrollY = window.pageYOffset;
+
+        sections.forEach(current => {
+          const sectionHeight = current.offsetHeight;
+          const sectionTop = current.offsetTop - 150;
+          const sectionId = current.getAttribute('id');
+
+          if (scrollY > sectionTop && scrollY <= sectionTop + sectionHeight) {
+            capsules.forEach(capsule => {
+              capsule.classList.remove('bg-blue-600', 'text-white', 'shadow-md');
+              capsule.classList.add('bg-slate-100', 'text-slate-600');
+              if (capsule.getAttribute('data-target') === sectionId) {
+                capsule.classList.remove('bg-slate-100', 'text-slate-600');
+                capsule.classList.add('bg-blue-600', 'text-white', 'shadow-md');
+              }
+            });
+          }
+        });
+      }
+
+      window.addEventListener('scroll', changeActiveCapsule);
+      // Trigger once on load
+      changeActiveCapsule();
+    });
+  </script>
+
+</body>
+</html>
