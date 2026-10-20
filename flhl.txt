@@ -3,7 +3,7 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>News & Updates — Local Humanitarian Leadership (LHL)</title>
+  <title>Forum Local Humanitarian Leadership (FLHL) — LHL Network</title>
   <!-- Tailwind CSS CDN -->
   <script src="https://cdn.tailwindcss.com"></script>
 </head>
@@ -21,12 +21,12 @@
         </div>
       </a>
 
-      <!-- Desktop Nav (Active State on News) -->
+      <!-- Desktop Nav (Active State on FLHL) -->
       <nav class="hidden md:flex items-center gap-8 text-sm font-medium text-slate-600">
         <a href="about.html" class="hover:text-blue-600 transition">About Us</a>
-        <a href="news.html" class="text-blue-600 font-bold text-base underline underline-offset-8 decoration-2">News</a>
+        <a href="news.html" class="hover:text-blue-600 transition">News</a>
         <a href="repositori.html" class="hover:text-blue-600 transition">Knowledge Hub</a>
-        <a href="flhl.html" class="hover:text-blue-600 transition">FLHL</a>
+        <a href="flhl.html" class="text-blue-600 font-bold text-base underline underline-offset-8 decoration-2">FLHL</a>
         <a href="event.html" class="hover:text-blue-600 transition">Event</a>
       </nav>
 
@@ -52,9 +52,9 @@
     <div id="mobile-menu" class="hidden md:hidden bg-white border-b border-slate-200 px-4 pt-2 pb-6 space-y-3 shadow-lg">
       <nav class="flex flex-col space-y-2 text-sm font-medium text-slate-600">
         <a href="about.html" class="hover:text-blue-600 hover:bg-slate-50 px-3 py-2 rounded-lg transition">About Us</a>
-        <a href="news.html" class="text-blue-600 font-bold bg-blue-50 px-3 py-2 rounded-lg">News</a>
+        <a href="news.html" class="hover:text-blue-600 hover:bg-slate-50 px-3 py-2 rounded-lg transition">News</a>
         <a href="repositori.html" class="hover:text-blue-600 hover:bg-slate-50 px-3 py-2 rounded-lg transition">Knowledge Hub</a>
-        <a href="flhl.html" class="hover:text-blue-600 hover:bg-slate-50 px-3 py-2 rounded-lg transition">FLHL</a>
+        <a href="flhl.html" class="text-blue-600 font-bold bg-blue-50 px-3 py-2 rounded-lg">FLHL</a>
         <a href="event.html" class="hover:text-blue-600 hover:bg-slate-50 px-3 py-2 rounded-lg transition">Event</a>
       </nav>
       <div class="pt-2 border-t border-slate-100 flex items-center gap-2">
@@ -85,11 +85,172 @@
     </div>
   </section>
 
-  <!-- MAIN CONTENT AREA (Placeholder) -->
-  <main class="flex-grow py-16">
-    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-      <!-- Content section to be added here -->
+  <!-- MAIN CONTENT AREA WITH STICKY CAPSULE SUBMENU & SCROLLSPY -->
+  <main class="flex-grow">
+    <!-- Sticky Capsule Submenu Bar -->
+    <div class="sticky top-20 z-40 bg-white/90 backdrop-blur-md border-b border-slate-200 shadow-sm py-3">
+      <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        <div class="flex items-center gap-3 overflow-x-auto no-scrollbar py-1">
+          <span class="text-xs font-bold uppercase tracking-wider text-slate-400 mr-2 whitespace-nowrap">Jump to:</span>
+          <a href="#shift-asia" data-target="shift-asia" class="capsule-link px-4 py-2 rounded-full text-xs font-semibold bg-blue-600 text-white hover:bg-blue-600 hover:text-white transition whitespace-nowrap">What is SHIFT ASIA?</a>
+          <a href="#partners" data-target="partners" class="capsule-link px-4 py-2 rounded-full text-xs font-semibold bg-slate-100 text-slate-700 hover:bg-blue-600 hover:text-white transition whitespace-nowrap">Partners and Knowledge Hubs</a>
+          <a href="#learning-agenda" data-target="learning-agenda" class="capsule-link px-4 py-2 rounded-full text-xs font-semibold bg-slate-100 text-slate-700 hover:bg-blue-600 hover:text-white transition whitespace-nowrap">FLHL Learning Agenda</a>
+        </div>
+      </div>
     </div>
+
+    <!-- Section 1: What is SHIFT ASIA? -->
+    <section id="shift-asia" class="py-16 scroll-mt-36 border-b border-slate-200 bg-white">
+      <div class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 space-y-6 text-slate-700 leading-relaxed">
+        <h2 class="text-3xl font-extrabold text-slate-900 border-b pb-4">What is SHIFT ASIA?</h2>
+        <p>In global development and social advocacy, FLHL stands for Feminist Local Humanitarian Leadership. Pioneered by organizations like Oxfam, this framework advocates for shifting resources and decision-making power away from top-down international bodies directly to local, crisis-affected communities. It places a specific emphasis on funding and empowering local feminist Women's Rights Organizations (WROs) and gender-focused civil society</p>
+        <p>SHIFT Asia is more than a program, it is a movement. Born from the recognition that women are often the first responders in crises yet remain the least resourced and least recognized, SHIFT Asia creates the conditions for feminist, locally-led humanitarian leadership to thrive across Bangladesh, Indonesia, Myanmar, and the Philippines.</p>
+        <p>SHIFT Asia (Supporting Humanitarian Initiatives for Transformation in Asia) advances women’s local humanitarian leadership and drives gender-transformative change across Asia. Working with a consortium of local women-led organizations, SHIFT Asia builds on the principle that the people most affected by crises must lead the response. It goes beyond training to challenge the structural norms, funding models, and institutional cultures that keep women on the margins of humanitarian systems.</p>
+        
+        <h3 class="text-2xl font-bold text-slate-900 pt-4">The Theory of Change</h3>
+        <p>SHIFT Asia’s Theory of Change operates on three interconnected pillars: (1) Building a robust network and collaboration among women’s organizations across Asia; (2) Enabling strong collective action through enhanced capacity, training, and increased campaigning; and (3) Advancing gender-transformative humanitarian policies at national and regional levels. Together, these pillars aim to create a feminist humanitarian system across Asia that is effective, inclusive, and just</p>
+        
+        <h3 class="text-2xl font-bold text-slate-900 pt-4">Evolution</h3>
+        <div class="grid grid-cols-1 md:grid-cols-2 gap-6 pt-2">
+          <div class="p-6 bg-slate-50 border border-slate-200 rounded-xl">
+            <h4 class="font-bold text-slate-900 text-lg mb-2">Phase 1 (2021 - 2023)</h4>
+            <p class="text-sm text-slate-600">A learning and piloting phase that created feminist spaces for collaboration across four countries, generating evidence-based approaches and shared learning.</p>
+          </div>
+          <div class="p-6 bg-slate-50 border border-slate-200 rounded-xl">
+            <h4 class="font-bold text-slate-900 text-lg mb-2">Phase 2 (2025 - 2027)</h4>
+            <p class="text-sm text-slate-600">Focuses on scaling and sustaining feminist, women-led humanitarian leadership by strengthening regional networks, promoting shared leadership, and advancing community-centered action across Asia.</p>
+          </div>
+        </div>
+        <p class="pt-4">By shifting ownership closer to local contexts, the project contributes to more gender-transformative humanitarian systems that are effective, inclusive, and just across the region.</p>
+      </div>
+    </section>
+
+    <!-- Section 2: Partners and Knowledge Hubs -->
+    <section id="partners" class="py-16 scroll-mt-36 border-b border-slate-200 bg-slate-50">
+      <div class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 space-y-8 text-slate-700 leading-relaxed">
+        <div>
+          <h2 class="text-3xl font-extrabold text-slate-900 border-b pb-4 mb-6">Partners and Knowledge Hubs</h2>
+          <p class="mb-4">SHIFT Asia’s strength lies in its partners — women-led organizations rooted in their communities, with deep contextual expertise and long-standing trust. Each partner anchors a national consortium or platform that brings together local women’s groups, civil society, and humanitarian actors. Alongside their programmatic work, each partner contributes to a shared regional knowledge hub, a growing repository of tools, research, and learning from the frontlines of feminist humanitarian action.</p>
+        </div>
+
+        <div class="space-y-6 bg-white p-6 sm:p-8 rounded-2xl border border-slate-200 shadow-sm">
+          <span class="text-xs font-bold uppercase tracking-wider text-blue-600 bg-blue-50 px-3 py-1 rounded-full">BANGLADESH</span>
+          <h3 class="text-xl font-bold text-slate-900">AVAS — Association of Voluntary Actions for Society</h3>
+          <p class="text-sm text-slate-600">Association of Voluntary Actions for Society (AVAS) places strong emphasis on collaboration, recognizing that sustainable and inclusive development outcomes are best achieved through collective action. By actively engaging with a wide range of government committees, national and international networks, coalitions, and thematic platforms, AVAS contributes to policy dialogue, knowledge exchange and coordinated response mechanisms across humanitarian and development sectors. These engagements enable AVAS to amplify community voices, influence decision-making processes, and align local interventions with national priorities and global standards. Through hosting, forming, and participating in diverse networks and platforms, AVAS strengthens institutional capacity, fosters strategic partnerships and ensures that its interventions remain responsive, accountable, and impactful for vulnerable populations at local, district, divisional and national levels.</p>
+          <div class="text-xs text-blue-600 font-medium">
+            <a href="http://avas.org.bd" target="_blank" class="hover:underline">avas.org.bd</a>
+          </div>
+        </div>
+
+        <div class="space-y-6 bg-white p-6 sm:p-8 rounded-2xl border border-slate-200 shadow-sm">
+          <span class="text-xs font-bold uppercase tracking-wider text-blue-600 bg-blue-50 px-3 py-1 rounded-full">INDONESIA</span>
+          <h3 class="text-xl font-bold text-slate-900">LBH APIK Indonesia & Penabulu Foundation</h3>
+          <p class="text-sm text-slate-600">The Association of LBH APIK Indonesia coordinates 18 LBH APIK offices across various provinces and regions in Indonesia. Established in 1995, APIK aims to realize a just, prosperous, and democratic society, as well as to create equal conditions between women and men in all aspects of life, including politics, economy, social, and culture.</p>
+          
+          <h4 class="font-bold text-slate-900 text-base pt-2">WLHL Coalition</h4>
+          <p class="text-sm text-slate-600">The Women’s Leadership in Humanitarian Consortium, or WLH Consortium for short, is a network of organizations across various sectors. The primary members of the WLHL Coalition are women’s organizations, and the Coalition focuses on strengthening the role of women’s organizations in advancing a feminist perspective within humanitarian ecosystem. Additionally, it includes several philanthropic and humanitarian institutions.</p>
+          <p class="text-sm text-slate-600">The WLHL’s coalition core team currently includes the Indonesia Legal Aid Association for Women (Asosiasi LBH APIK), Kalyanamitra, Dompet Dhuafa, Lingkar, and Penabulu-Oxfam. This membership continues to grow and expand, as part of the mandate of the National Consolidation of Women’s Leadership in Building Resilience, held in Makassar on October 26-28, 2022.</p>
+          <p class="text-sm text-slate-600">The core business of Indonesia WLHL coalition membersis building a multi-issue women’s movement, ranging from women’s human rights, assistance to victims of gender-based violence, women and the environment, assistance to fishermen, organizations for people with disabilities, and various other focused issues.</p>
+          <div class="text-xs text-blue-600 font-medium">
+            <a href="https://wlhl.lbhapik.or.id/profil/konsorsium-wlhl/" target="_blank" class="hover:underline">https://wlhl.lbhapik.or.id/profil/konsorsium-wlhl/</a>
+          </div>
+        </div>
+
+        <div class="space-y-6 bg-white p-6 sm:p-8 rounded-2xl border border-slate-200 shadow-sm">
+          <span class="text-xs font-bold uppercase tracking-wider text-blue-600 bg-blue-50 px-3 py-1 rounded-full">PHILIPPINES</span>
+          <h3 class="text-xl font-bold text-slate-900">Bayi Inc.</h3>
+          <p class="text-sm text-slate-600">Promoting women Local Humanitarian Leadership (LHL) is one of the priority strategies of Oxfam Pilipinas in its humanitarian programming, alongside its strong commitment to feminist approaches and upholding the feminist principles across all its work. We believe that advancing women local humanitarian leadership (WLHL) is key in achieving transformational impact on women’s rights and gender equality. Thus, this Learning Initiative on LHL and Women’s Leadership is strongly aligned with their regional priorities under two key levers: 1) Partnerships where we promote localization of leadership in humanitarian responses and facilitate support for southern organizations to be front liners, and 2) Thought leadership and the development of extensive knowledge-based practices on gender equality and approaches to increase women’s capacities and voice.</p>
+          <p class="text-sm text-slate-600">In partnership with Oxfam Pilipinas, Bayi, Inc. implements multiples learning exchange initiatives to surface a localized, decolonial, gender-transformative awareness and understanding of local humanitarian leadership experiences hence eventually influence policies that will encourage and capacitate local humanitarian leaders.</p>
+          <div class="text-xs text-blue-600 font-medium">
+            <a href="https://angatbayi.com/bayinihan-home/" target="_blank" class="hover:underline">https://angatbayi.com/bayinihan-home/</a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Section 3: FLHL Learning Agenda -->
+    <section id="learning-agenda" class="py-16 scroll-mt-36 bg-white">
+      <div class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 space-y-8 text-slate-700 leading-relaxed">
+        <div>
+          <h2 class="text-3xl font-extrabold text-slate-900 border-b pb-4 mb-6">FLHL Learning Agenda</h2>
+          <p class="mb-4">The SHIFT Asia Learning Agenda offers a structured series of regional learning sessions that bring together women humanitarian leaders, practitioners, researchers, and allies from across Asia and beyond. Each session is designed to generate evidence, share practice, and advance the Feminist Local Humanitarian Leadership (FLHL) Roadmap. Sessions move from conceptual framing to practical application, building a body of knowledge that is rooted in lived experience. Materials from each session are made freely available through the Oxfam resource platform.</p>
+        </div>
+
+        <!-- Session 6 -->
+        <div class="p-6 bg-slate-50 border border-slate-200 rounded-xl space-y-3">
+          <span class="text-xs font-bold text-blue-600 bg-blue-100 px-2.5 py-1 rounded">17 June 2026</span>
+          <h3 class="text-lg font-bold text-slate-900">Session 6: At a Crossroads Humanitarian Reset</h3>
+          <p class="text-sm font-semibold text-slate-700">Theme: 10 Year Grand Bargain Learning Series: At a Crossroads — Protecting Quality, Equity, and Local Leadership Amidst the “Humanitarian Reset” in Asia</p>
+          <p class="text-sm text-slate-600">Speakers: Jermaine Baltazar Bayas (Oxfam Asia / AADMER Partnership Group), Hafsar Tameesuddin (Asia Pacific Refugee Rights Network – APRRN), and Regina “Nanette” Salvador-Antequisa (ECOWEB / CLEARNet, Philippines)</p>
+          <p class="text-sm text-slate-600">Summary of Discussion: This SHIFT Asia learning session examined how the “Humanitarian Reset”, a reform of the global aid system launched in response to shrinking budgets, threatens hard-won gains in quality, equity, and local leadership across Asia. With only 37% of the 2025 Asia-Pacific appeal funded and an estimated 200 million people set to go unreached, speakers warned that hyper-prioritization risks shrinking the system rather than solving its structural problems, devolving responsibility onto local actors without matching power or resources. The Rohingya case from Cox’s Bazar showed how a narrow definition of “life-saving” reduces the crisis to bare survival — a $7-per-month ration may keep a person alive but cannot protect a woman from violence or a young person from a future without education; the crisis, speakers argued, has not become less severe, only less visible. In contrast, ECOWEB’s survivor- and community-led response (SCLR) in the Philippines proved that when affected people define their own priorities and control flexible micro-grants, resources go further, and women emerge as sustained leaders. The session underscored that genuine transformation requires a power-shift, not a cost-cutting exercise: the real test of the Reset is whether it changes who decides, who controls resources, and who bears risk.</p>
+        </div>
+
+        <!-- Session 5 -->
+        <div class="p-6 bg-slate-50 border border-slate-200 rounded-xl space-y-3">
+          <span class="text-xs font-bold text-blue-600 bg-blue-100 px-2.5 py-1 rounded">23 April 2026</span>
+          <h3 class="text-lg font-bold text-slate-900">Session 5: Shifting Power through Flexible Funding</h3>
+          <p class="text-sm font-semibold text-slate-700">Theme: 10 Year Grand Bargain Learning Series: Shifting Power through Flexible Funding</p>
+          <p class="text-sm text-slate-600">Speakers: Minal Singh (Oxfam Asia), Ishwar Datt Upadhyay (NEEDS Nepal), and Sierly Anita Gafar (LBH APIK Medan / WLHL Consortium, Indonesia)</p>
+          <p class="text-sm text-slate-600">Summary of Discussion: This joint learning session between the SHIFT Asia and ACT II projects moved beyond the theoretical rhetoric of the Grand Bargain to evaluate how flexible funding models directly drive a localization revolution. Opening with a global funding landscape analysis, the discussion highlighted that despite a 10-year mandate for direct localization, local women-led organizations (WLOs) still receive less than 1% of gender-related aid, leaving them vulnerable to financial instability and top-down sub-contracting. To counter this structural barrier, case studies from Nepal and Indonesia demonstrated the power of community-controlled funding architecture. In Nepal, the implementation of localized Emergency Response Funds (ERFs)—led predominantly by women-led disaster management committees—enabled communities to mobilize immediate, autonomous aid within 12 hours of the devastating 2024 floods without waiting for external aid. Similarly, during the catastrophic 2025 Sumatra floods triggered by Cyclone Senyar, Indonesia’s Humanitarian Action Fund (HAF) proved that “frictionless” flexible funding allows frontline teams to bypass bureaucratic hurdles, execute rapid gender assessments, and pivot resources toward unseen survival needs like dignity kits and gender-based violence hotlines. The discussion underscored that genuine system transformation requires international donors to move past rigid compliance and risk-transfer mechanisms to embrace multi-year, flexible financing that establishes local women as strategic leaders rather than mere sub-grantees.</p>
+          <div class="text-xs pt-2">
+            <a href="https://oxfam.box.com/s/hc2ksfcnw0gqfai75x6vq0i3wdq379xc" target="_blank" class="text-blue-600 hover:underline font-medium">Resources: https://oxfam.box.com/s/hc2ksfcnw0gqfai75x6vq0i3wdq379xc</a>
+          </div>
+        </div>
+
+        <!-- Session 4 -->
+        <div class="p-6 bg-slate-50 border border-slate-200 rounded-xl space-y-3">
+          <span class="text-xs font-bold text-blue-600 bg-blue-100 px-2.5 py-1 rounded">1 April 2026</span>
+          <h3 class="text-lg font-bold text-slate-900">Session 4: Dismantling the System: Shifting Power from "Reform" to a Localization (R)evolution</h3>
+          <p class="text-sm font-semibold text-slate-700">Theme: Dismantling the System: Shifting Power from “Reform” to a Localization (R)evolution</p>
+          <p class="text-sm text-slate-600">Speakers: Hannah Cooper (Oxfam International), Shahnaz Sumi (BNPS / BWHP, Bangladesh), and Dr. Avianto Amri (IHCP, Indonesia)</p>
+          <p class="text-sm text-slate-600">Summary of Discussion: This session moved beyond incremental system adjustments to advocate for a structural transformation of the humanitarian architecture. Drawing on global insights from the 10-year legacy of the Grand Bargain alongside frontline realities from Bangladesh and Indonesia, the discussion illustrated how local civil society is actively reclaiming power from traditional, top-down systems. Case studies demonstrated how women-led networks navigate compliance-heavy gatekeeping to drive gender-transformative responses, and how community-driven platforms can successfully replace UN-led Cluster systems to spearhead massive emergency operations like the Cyclone Senyar response. The discussion underscored that dismantling systemic barriers requires moving past restrictive bureaucracy to embrace feminist “power-with” leadership, localized coordination sovereignty, and flexible, trust-based funding models.</p>
+          <div class="text-xs pt-2">
+            <a href="https://oxfam.box.com/s/2jaf1k2hze7y89tcq6ucohs0qhxgepel" target="_blank" class="text-blue-600 hover:underline font-medium">Resources: https://oxfam.box.com/s/2jaf1k2hze7y89tcq6ucohs0qhxgepel</a>
+          </div>
+        </div>
+
+        <!-- Session 3 -->
+        <div class="p-6 bg-slate-50 border border-slate-200 rounded-xl space-y-3">
+          <span class="text-xs font-bold text-blue-600 bg-blue-100 px-2.5 py-1 rounded">29 January 2026</span>
+          <h3 class="text-lg font-bold text-slate-900">Session 3: The FLHL Roadmap in Action</h3>
+          <p class="text-sm font-semibold text-slate-700">Theme: The FLHL Roadmap in Action: Centering Women-Led Response and Grassroots Initiative.</p>
+          <p class="text-sm text-slate-600">Speakers: Gita Rani Adhikary (Oxfam Asia), Rismawati (Flower Aceh, Indonesia), and Akhyai Mong Marma (AKS, Bangladesh).</p>
+          <p class="text-sm text-slate-600">Summary of Discussion: This final session moved from conceptual alignment to the practical application of the Feminist Local Humanitarian Leadership (FLHL) Roadmap. Case studies from Aceh, Indonesia, and Bandarban, Bangladesh, illustrated how women-led and youth-led initiatives manage the full humanitarian cycle, from gender-responsive flood assessments to building the leadership capacity of adolescent girls. The discussion underscored that flexible, trust-based funding and “power-with” leadership models are essential enablers for scaling these grassroots initiatives and achieving a system-wide transformation by 2030</p>
+          <div class="text-xs pt-2">
+            <a href="https://oxfam.box.com/s/tw0nmp2mj2sxgqgohlcjjvwyg307eo0m" target="_blank" class="text-blue-600 hover:underline font-medium">Resources: https://oxfam.box.com/s/tw0nmp2mj2sxgqgohlcjjvwyg307eo0m</a>
+          </div>
+        </div>
+
+        <!-- Session 2 -->
+        <div class="p-6 bg-slate-50 border border-slate-200 rounded-xl space-y-3">
+          <span class="text-xs font-bold text-blue-600 bg-blue-100 px-2.5 py-1 rounded">18 December 2025</span>
+          <h3 class="text-lg font-bold text-slate-900">Session 2: Strengthening Collaborative Networks</h3>
+          <p class="text-sm font-semibold text-slate-700">Theme: Strengthening Collaborative Networks: Advancing Local and Feminist Leadership in Asia’s Humanitarian Systems .</p>
+          <p class="text-sm text-slate-600">Speakers: Aisha Gul (UN Women), Syamsul Ardiansyah (NEAR APLL), and Holly Miller (Feminist Humanitarian Network) .</p>
+          <p class="text-sm text-slate-600">Summary of Discussion: The session focused on the political and structural transformation required to move beyond the rhetoric of “localization” and the Grand Bargain. Speakers presented concrete alternatives to hierarchical systems, such as the WE Respond Dashboard for mapping women-led organizations and non-hierarchical, collective governance models. A major point of consensus was that current humanitarian systems prioritize donor compliance over local knowledge, and true change requires a “new deal” grounded in cross-movement solidarity and the redistribution of power and resources.</p>
+          <div class="text-xs pt-2">
+            <a href="https://oxfam.box.com/s/oag4niokqyf3znqiw03ywu21tga6672i" target="_blank" class="text-blue-600 hover:underline font-medium">Resources: https://oxfam.box.com/s/oag4niokqyf3znqiw03ywu21tga6672i</a>
+          </div>
+        </div>
+
+        <!-- Session 1 -->
+        <div class="p-6 bg-slate-50 border border-slate-200 rounded-xl space-y-3">
+          <span class="text-xs font-bold text-blue-600 bg-blue-100 px-2.5 py-1 rounded">27 November 2025</span>
+          <h3 class="text-lg font-bold text-slate-900">Session 1: Amplifying Women’s Leadership and Local Knowledge</h3>
+          <p class="text-sm font-semibold text-slate-700">Theme: Amplifying Women’s Leadership and Local Knowledge in Humanitarian Action.</p>
+          <p class="text-sm text-slate-600">Speakers: Shamin Ara Begum (Pollisree, Bangladesh), Khotimun Sutanti (Asosiasi LBH APIK, Indonesia), Zir Than Hnuni (HLDO, Myanmar), and John David L. S. Dayao (Bayi Inc, Philippines).</p>
+          <p class="text-sm text-slate-600">Summary of Discussion: This session highlighted that women-led organizations are often the first responders in crises, yet they remain under-recognized and under-funded. Speakers shared how feminist platforms, such as the BWHP in Bangladesh and the WLHL Consortium in Indonesia, are driving inclusive humanitarian action and navigating change in restricted environments like Myanmar’s Chin State. The discussion emphasized that local women leaders carry a disproportionate burden of unpaid care and humanitarian work, necessitating stronger capacity building and global advocacy to challenge patriarchal norms in the humanitarian system.</p>
+          <div class="text-xs pt-2">
+            <a href="https://oxfam.box.com/s/os14cr7ynf17s6t8r13fxnm06zxr5tg5" target="_blank" class="text-blue-600 hover:underline font-medium">Resources: https://oxfam.box.com/s/os14cr7ynf17s6t8r13fxnm06zxr5tg5</a>
+          </div>
+        </div>
+
+        <!-- Closing / Summit Note -->
+        <div class="p-6 bg-blue-50 border border-blue-200 rounded-xl text-slate-700 text-sm">
+          <p>This Summit is the initiative of the LHL Network, a global community of practice spread in 25 countries and comprised of 120 members from local and This Summit happens every 3 years. For resources from the 2021 Summit, click on the</p>
+        </div>
+      </div>
+    </section>
   </main>
 
   <!-- FOOTER -->
@@ -103,14 +264,40 @@
     </div>
   </footer>
 
-  <!-- SCRIPT MOBILE MENU -->
+  <!-- SCRIPTS: MOBILE MENU & SCROLLSPY -->
   <script>
     document.addEventListener('DOMContentLoaded', () => {
+      // Mobile Menu Toggle
       const mobileMenuButton = document.getElementById('mobile-menu-button');
       const mobileMenu = document.getElementById('mobile-menu');
 
       mobileMenuButton.addEventListener('click', () => {
         mobileMenu.classList.toggle('hidden');
+      });
+
+      // Scrollspy & Capsule Submenu Active State Logic
+      const sections = document.querySelectorAll('section[id]');
+      const capsuleLinks = document.querySelectorAll('.capsule-link');
+
+      window.addEventListener('scroll', () => {
+        let scrollY = window.pageYOffset;
+
+        sections.forEach(section => {
+          const sectionHeight = section.offsetHeight;
+          const sectionTop = section.offsetTop - 150;
+          const sectionId = section.getAttribute('id');
+
+          if (scrollY > sectionTop && scrollY <= sectionTop + sectionHeight) {
+            capsuleLinks.forEach(link => {
+              link.classList.remove('bg-blue-600', 'text-white');
+              link.classList.add('bg-slate-100', 'text-slate-700');
+              if (link.getAttribute('data-target') === sectionId) {
+                link.classList.remove('bg-slate-100', 'text-slate-700');
+                link.classList.add('bg-blue-600', 'text-white');
+              }
+            });
+          }
+        });
       });
     });
   </script>
